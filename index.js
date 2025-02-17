@@ -9,7 +9,7 @@ const port = process.env.PORT || 8080;
 app.use(bodyParser.json());
 
 const WEBHOOK_SITE_URL =
-  "https://webhook.site/b263da62-dcf3-45b1-84e5-b94abbb30402";
+  "https://webhook.site/b09e5453-06fe-45ec-9d9e-e0c27aea3603";
 
 async function sendToWebhookSite(data) {
   try {
